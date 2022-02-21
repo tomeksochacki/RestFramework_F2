@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-08T15:40:14 CET" name="com.trello.tests.testRunners.TestRunner" finished-at="2022-02-08T15:40:21 CET" duration-ms="7839">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.trello.tests.testRunners.TestRunner@158da8e]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-02-08T15:40:14 CET" name="Command line test" finished-at="2022-02-08T15:40:21 CET" duration-ms="7839">
+      <class name="com.trello.tests.testRunners.TestRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.trello.tests.testRunners.TestRunner@158da8e]" started-at="2022-02-08T15:40:14 CET" name="setUpClass" finished-at="2022-02-08T15:40:14 CET" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.trello.tests.testRunners.TestRunner@158da8e]" started-at="2022-02-08T15:40:14 CET" name="setUp" finished-at="2022-02-08T15:40:20 CET" duration-ms="6085" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.trello.tests.testRunners.TestRunner@158da8e]" started-at="2022-02-08T15:40:20 CET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-08T15:40:21 CET" duration-ms="1553" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Compare email values"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Trello check user email"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:134)
+at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:83)
+at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
+at com.trello.pages.loginPage.LoginPage.fillEmailField(LoginPage.java:16)
+at com.trello.tests.stepDefs.trelloStepDefs.TrelloStepDefs.user_enters_and_into_trello(TrelloStepDefs.java:19)
+at ✽.User enters email and password into trello(file:src/test/resources/features/Email.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.trello.tests.testRunners.TestRunner@158da8e]" started-at="2022-02-08T15:40:21 CET" name="tearDown" finished-at="2022-02-08T15:40:21 CET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.trello.tests.testRunners.TestRunner@158da8e]" started-at="2022-02-08T15:40:21 CET" name="tearDownClass" finished-at="2022-02-08T15:40:21 CET" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.trello.tests.testRunners.TestRunner -->
+    </test> <!-- Command line test -->
+  </suite> <!-- com.trello.tests.testRunners.TestRunner -->
+</testng-results>

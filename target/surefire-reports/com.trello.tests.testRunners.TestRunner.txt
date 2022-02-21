@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: com.trello.tests.testRunners.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.617 sec <<< FAILURE!
+runScenario(com.trello.tests.testRunners.TestRunner)  Time elapsed: 1.57 sec  <<< FAILURE!
+java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:134)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:83)
+	at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
+	at com.trello.pages.loginPage.LoginPage.fillEmailField(LoginPage.java:16)
+	at com.trello.tests.stepDefs.trelloStepDefs.TrelloStepDefs.user_enters_and_into_trello(TrelloStepDefs.java:19)
+	at ?.User enters email and password into trello(file:src/test/resources/features/Email.feature:7)
+
